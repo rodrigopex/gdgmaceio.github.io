@@ -1,0 +1,19 @@
+div.footer{
+    position: relative;
+    border-top: 4px solid yellow;
+    background-image: url(../img/footer.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+img.g_icon{
+    position: absolute;
+    left: 45%;
+    top: 45%;   
+}
+
+img.g_icon:hover{
+    opacity: 0.6;
+}
