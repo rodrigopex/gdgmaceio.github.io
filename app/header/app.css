@@ -1,0 +1,61 @@
+.header {
+    height: 400px;
+    background-color: #579AE2!important;
+}
+
+.tabs {
+    background-color: #579AE2;
+    color: #579AE2;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 50px;
+    width: 575px;
+}
+
+.row {
+    margin: 50px 50px 0px 50px;
+}
+
+.title {
+    margin: 16px 0px 0px 16px;
+    color: #90CAF9;
+    font-size: 18px;
+}
+
+.search {
+    margin: -10px 0px 0px 0px;
+    width: 500px;
+}
+
+.fab {
+    background-color: #E91E63!important;
+    margin: -30px 0px 0px 50px;
+}
+
+md-tabs.md-default-theme.md-accent .md-header {
+    background-color: #579AE2;
+}
+
+md-tabs.md-default-theme.md-accent md-tab:not([disabled]).active {
+    color: #FFF;
+}
+
+md-tabs.md-default-theme.md-accent md-tab:not([disabled]) {
+    color: #90CAF9;
+}
+
+.header md-tabs-ink-bar {
+    background-color: #FFFF00 !important; 
+}
+
+md-input-container.md-default-theme .md-input {
+    color: #FFF;
+    border-color: #90CAF9;
+    text-shadow: ;
+}
+
+md-input-container.md-default-theme label, md-input-container.md-default-theme .md-placeholder {
+    text-shadow: ;
+    color: #E3F2FD;
+}

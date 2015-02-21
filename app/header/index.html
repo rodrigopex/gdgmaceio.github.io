@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>header</title>
+
+    <link rel="stylesheet" href="../bower_components/angular-material/angular-material.css">
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body ng-app="GDGApp">
+    <md-content ng-controller="headerController">
+        <md-toolbar class="header">
+            <div layout="row" layout-sm="column" class="row">
+                <img src="logo.png" width="160px" height="43px" alt="">
+                <span class="title">Developers Group Maceió</span>
+                <span flex></span>
+                <md-input-container class="search">
+                    <label>O que você quer aprender?</label>
+                    <input>
+                </md-input-container>
+            </div>
+
+            <div class="md-toolbar-tools md-toolbar-tools-bottom">
+                <md-tabs class="md-accent tabs">
+                    <md-tab id="tab1" aria-controls="tab1-content">
+                        Home
+                    </md-tab>
+                    <md-tab id="tab1" aria-controls="tab1-content">
+                        Sobre
+                    </md-tab>
+                    <md-tab id="tab1" aria-controls="tab1-content">
+                        Eventos
+                    </md-tab>
+                    <md-tab id="tab1" aria-controls="tab1-content">
+                        Participantes
+                    </md-tab>
+                    <md-tab id="tab1" aria-controls="tab1-content">
+                        Contato
+                    </md-tab>
+                </md-tabs>
+            </div>
+        </md-toolbar>
+
+        <md-button class="md-fab fab" aria-label="Eat cake">
+            <md-icon md-svg-src="img/icons/cake.svg"></md-icon>
+        </md-button>
+    </md-content>
+
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-animate/angular-animate.js"></script>
+    <script src="../bower_components/angular-aria/angular-aria.js"></script>
+    <script src="../bower_components/angular-material/angular-material.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
