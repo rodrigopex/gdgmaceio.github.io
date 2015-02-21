@@ -1,0 +1,29 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Web designer: Carlyson Oliveira
+    Google Plus: +CarlysonOliveira
+    Twitter: @carlyson
+    From: Maceio, Alagoas, Brazil
+
+    Front-end Lover: Juarez Filho
+    Google Plus: +JuarezPAFilho
+    Twitter: @juarezpaf
+    From: Maceio, Alagoas, Brazil
+
+    Front-end Developer: Filipe Falcão 
+    Google Plus: +FilipeFalcãoBatista
+    Twitter: @filipefalcaos
+    From: Maceio, Alagoas, Brazil
+
+    Front-end Developer: Thyago Raphael
+    Google Plus: +ThyagoRaphael
+    Twitter: @thyagoraphael
+    From: Maceio, Alagoas, Brazil
+
+# TECHNOLOGY COLOPHON
+
+    Angular Material, HTML5, CSS3
+    HTML5 Boilerplate, Normalize.css
