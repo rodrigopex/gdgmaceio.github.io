@@ -526,7 +526,7 @@ html, body {
     height: 100%;
 }
 main {
-    background: url('../img/lets-rock.jpg') no-repeat;
+    background: url('../img/lets-rock.jpg') no-repeat center center fixed;
     background-size: cover;
     height: 100%;
 }
