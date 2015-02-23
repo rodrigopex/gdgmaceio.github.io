@@ -217,7 +217,7 @@
 /***
 **** RESPONSIVE DESIGN
 ***/
-@media screen and (max-width: 960px) {
+/*@media screen and (max-width: 960px) {
   .centered {
     width: 900px;
   }
@@ -228,7 +228,6 @@
 
   .card-gdg {
     width: 430px;
-    /*height: 370px;*/
   }
 
   .card-gdg md-card-content {
@@ -255,4 +254,4 @@
     text-align: center;
     margin: 0 70px;
   }
-}
+}*/
