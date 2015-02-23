@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <title>AngularJS Material App</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="bower_components/mdi/materialdesignicons.css">
+    <link rel="stylesheet" href="./bower_components/angular-material/angular-material.css">
+    <link rel="stylesheet" href="./app.css" >
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+
+  <body ng-app="starterApp" layout="column" ng-controller="AppCtrl">
+
+    <!-- Main Content -->
+    <div class="main-content" ng-controller="AppCtrl" layout="column">
+        <div class="content">
+            <!-- <p class="description-content">O Grupo de Desenvolvedores Google visa agregar os usuários de tecnologias Google da região de Maceió-AL e prover um ambiente de compartilhamento de informações.</p>
+
+            <h3 class="title-events">Nossos Próximos Eventos</h3> -->
+
+            <md-card class="card-gdg">
+                    <figure>
+                        <img src="assets/img/cover-event.jpg" alt="Washed Out">
+                        <figcaption>GDG Maceió Meetup</figcaption>
+                    </figure>
+
+                    <ul class="temp">
+                        <li>
+                            <i class="mdi mdi-calendar"></i>
+                            25 de Março
+                        </li>
+                        <li>
+                            <i class="mdi mdi-timer"></i>
+                            18H ÀS 20H
+                        </li>
+                        <li>
+                            <i class="mdi mdi-map-marker"></i>
+                            FACULDADE CESMAC
+                        </li>
+                    </ul>
+
+                    <div class="description-card">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque consectetur officiis error corporis omnis hic, quae qui, amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, corporis!</p>
+
+                        <md-button class="md-raised md-primary btn-card">EU VOU!</md-button>
+                    </div><!-- .description-card -->
+            </md-card>
+        </div><!-- .content -->
+    </div><!-- .main-content -->
+    <!-- END Main Content -->
+
+    <script src="./bower_components/angular/angular.js"></script>
+    <script src="./bower_components/angular-route/angular-route.js"></script>
+    <script src="./bower_components/angular-aria/angular-aria.js"></script>
+    <script src="./bower_components/angular-animate/angular-animate.js"></script>
+
+    <script src="./bower_components/angular-material/angular-material.js"></script>
+
+    <script src="./app.js"></script>
+    <script src="./src/avatars/avatarService.js"></script>
+
+  </body>
+</html>

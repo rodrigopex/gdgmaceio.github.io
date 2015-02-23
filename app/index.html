@@ -1,72 +1,124 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-  <head>
+<head>
     <title>AngularJS Material App</title>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
-
+    <link rel="stylesheet" href="bower_components/mdi/materialdesignicons.css">
     <link rel="stylesheet" href="./bower_components/angular-material/angular-material.css">
     <link rel="stylesheet" href="./app.css" >
-  </head>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
 
-  <body ng-app="starterApp" layout="column" ng-controller="AppCtrl">
+<body ng-app="starterApp" ng-controller="AppCtrl">
 
-    <md-toolbar layout="row">
-      <button ng-click="toggleSidenav('left')" hide-gt-sm class="menuBtn">
-        <span class="visuallyhidden">Menu</span>
-      </button>
-      <h1>AngularJS Material Apppppppppppppppppp</h1>
-    </md-toolbar>
 
-    <!--
-         Use `flex` [below] to have the side bar and content area
-         fill the available vertical display area
-     -->
+<!-- Main Content -->
+<div class="main-content clearfix">
+    <p class="about-gdg">O Grupo de Desenvolvedores Google visa agregar os usuários de tecnologias Google da região de Maceió-AL e prover um ambiente de compartilhamento de informações.</p>
 
-    <div layout="row" flex>
+    <h3 class="title-events">Nossos Próximos Eventos</h3>
 
-      <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$media('gt-sm')">
-        <md-list>
-          <md-item ng-repeat="it in avatars">
-            <md-item-content>
-              <md-button ng-click="selectAvatar(it)" ng-class="{'selected' : it === selected }">
-                <span class="{{it.classname}} avatar"></span>
-                {{it.name}}
-              </md-button>
-            </md-item-content>
-          </md-item>
-        </md-list>
-      </md-sidenav>
+    <div class="content-card clearfix">
+        <div class="centered">
+            <md-card class="card-gdg">
+                <div class="card-photo">
+                    <img src="assets/img/cover-event.jpg" alt="Washed Out">
+                    <span>GDG Maceió Meetup</span>
+                </div>
+                <md-card-content>
+                <ul class="card-list">
+                    <li>
+                        <i class="mdi mdi-calendar"></i>
+                        25 de março
+                    </li>
+                    <li>
+                        <i class="mdi mdi-timer"></i>
+                        18h às 20h
+                    </li>
+                    <li>
+                        <i class="mdi mdi-map-marker"></i>
+                        faculdade cesmac
+                    </li>
+                </ul>
 
-      <!--
-          Use `flex` [below] to have the content area
-          fill the available horizontal display area on the right side
-      -->
+                <section class="card-description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nullam maximus elit eget facilisis consequat. Sed tempor dolor nibh. Praesent eu tincidunt tellus.</p>
 
-      <div layout="column" flex class="content-wrapper" id="content">
-        <md-content layout="column" flex class="md-padding">
-            <span class="{{selected.classname}} avatar" role="img" aria-label="{{selected.name}}"></span>
-            <h2>{{selected.name}}</h2>
-            <p>{{selected.content}}</p>
-            <md-button class="action actionBtn" ng-click="showActions($event)">
-              <span class="visuallyhidden">Actions</span>
-            </md-button>
-        </md-content>
-      </div>
-    </div>
+                        <md-button class="md-raised md-primary btn">EU VOU!</md-button>
+                    </section><!-- .description-card -->
+                </md-card-content>
+            </md-card><!-- .card-gdg -->
 
-    <script src="./bower_components/angular/angular.js"></script>
-    <script src="./bower_components/angular-route/angular-route.js"></script>
-    <script src="./bower_components/angular-aria/angular-aria.js"></script>
-    <script src="./bower_components/angular-animate/angular-animate.js"></script>
+            <md-card class="card-gdg">
+                <div class="card-photo">
+                    <img src="assets/img/cover-event2.jpg" alt="Washed Out">
+                    <span>Codelab Angular JS</span>
+                </div>
+                <md-card-content>
+                    <ul class="card-list">
+                        <li>
+                            <i class="mdi mdi-calendar"></i>
+                            25 de março
+                        </li>
+                        <li>
+                            <i class="mdi mdi-timer"></i>
+                            18h às 20h
+                        </li>
+                        <li>
+                            <i class="mdi mdi-map-marker"></i>
+                            faculdade cesmac
+                        </li>
+                    </ul>
 
-    <script src="./bower_components/angular-material/angular-material.js"></script>
+                    <section class="card-description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nullam maximus elit eget facilisis consequat. Sed tempor dolor nibh. Praesent eu tincidunt tellus.</p>
 
-    <script src="./app.js"></script>
-    <script src="./src/avatars/avatarService.js"></script>
+                        <md-button class="md-raised md-primary btn">EU VOU!</md-button>
+                    </section><!-- .description-card -->
+                </md-card-content>
+            </md-card><!-- .card-gdg -->
+        </div><!-- centered -->
+    </div><!-- content-card -->
 
-  </body>
+    <div class="organizers organizers-home">
+        <div class="centered">
+            <h3>Organizers</h3>
+            <ul class="team-list">
+                <li>
+                    <span class="list-organizers juarez"></span>
+                    <span class="name-organizers">Juarez Filho</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nullam maximus elit eget</p>
+                </li>
+                <li>
+                    <span class="list-organizers gustavo-costa"></span>
+                    <span class="name-organizers">Gustavo Costa</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nullam maximus elit eget</p>
+                </li>
+            </ul>
+        </div><!-- .centered -->
+    </div><!-- .organizers -->
+</div><!-- .main-content -->
+<!-- END Main Content -->
+
+<!-- footer -->
+<footer class="footer">
+    <a href="#" class="google-plus"></a>
+    <!-- <img src="assets/img/g+icon.png" height="93" width="93" alt=""> -->
+</footer>
+<!-- END footer -->
+
+<script src="./bower_components/angular/angular.js"></script>
+<script src="./bower_components/angular-route/angular-route.js"></script>
+<script src="./bower_components/angular-aria/angular-aria.js"></script>
+<script src="./bower_components/angular-animate/angular-animate.js"></script>
+
+<script src="./bower_components/angular-material/angular-material.js"></script>
+
+<script src="./app.js"></script>
+<script src="./src/avatars/avatarService.js"></script>
+</body>
 </html>

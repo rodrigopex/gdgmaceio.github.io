@@ -1,0 +1,258 @@
+/***
+**** CSS DEFAULT
+***/
+.clearfix:after {
+  content: " "; /* Older browser do not support empty content */
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.centered {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.clear {
+  clear: both;
+}
+
+/***
+**** MAIN CONTENT
+***/
+.main-content {
+  /*width: 2000px;*/
+  background-color: rgba(242, 242, 242, 1);
+}
+
+.main-content .about-gdg, .main-content .title-events, .organizers h3 {
+  font-size: 1.625em;
+  font-family: "Roboto";
+  color: rgba(3, 155, 229, 1);
+  line-height: 1.385;
+  text-align: center;
+  font-weight: normal;
+}
+
+.about-gdg {
+  width: 780px;
+  margin: 0 auto;
+  padding: 75px 0 30px 0;
+}
+
+.main-content .title-events {
+  padding-bottom: 50px;
+}
+
+/***
+**** CARD
+***/
+.content-card {
+  /*width: 1170px;*/
+  /*margin: 0 auto;*/
+}
+
+.card-gdg {
+  width: 570px;
+  height: 415px;
+  float: left;
+  background: rgba(250, 250, 250, 1);
+  box-shadow: 3px 3px 3px rgba(212, 212, 212, 1);
+}
+
+.card-gdg:first-child {
+  margin-right: 30px;
+}
+
+.card-gdg .card-photo {
+  position: relative;
+}
+
+.card-gdg .card-photo img {
+  border-bottom: 3px solid rgb( 255, 255, 0 );
+}
+
+.card-gdg .card-photo span {
+  font-size: 1.17em;
+  font-family: "Roboto";
+  color: rgb( 255, 255, 255 );
+  -moz-transform: matrix( 1.39445974992277,0,0,1.39445974992276,0,0);
+  -webkit-transform: matrix( 1.39445974992277,0,0,1.39445974992276,0,0);
+  -ms-transform: matrix( 1.39445974992277,0,0,1.39445974992276,0,0);
+  position: absolute;
+  bottom: 30px;
+  left: 60px;
+}
+
+.card-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.card-gdg md-card-content {
+  width: 515px;
+  margin: 0 auto;
+}
+
+.card-list li {
+  display: inline-block;
+  font-size: .875em;
+  font-family: "Roboto";
+  color: rgba(0, 189, 214, 1);
+  text-transform: uppercase;
+  padding: 25px 35px 0 0px;
+}
+
+.card-list li i {
+  padding-right: 13px;
+}
+
+.card-description {
+  padding-top: 15px;
+}
+
+.card-description p {
+  font-size: 1em;
+  font-family: "Roboto";
+  color: rgb( 102, 102, 102 );
+  line-height: 1.5;
+  width: 350px;
+  display: inline-block;
+  margin-right: 45px;
+}
+
+/***
+**** BTN
+***/
+.btn {
+  border-radius: 2px;
+  background-color: rgba(0, 189, 214, 1) !important;
+  width: 114px;
+  height: 37px;
+}
+
+/***
+**** ORGANIZERS
+***/
+.organizers {
+}
+
+.organizers-home {
+  padding-bottom: 65px;
+}
+
+.organizers-home h3 {
+  padding: 65px 0 60px 0;
+}
+
+.team-list {
+  list-style: none;
+}
+
+.team-list li {
+  width: 24.5%;
+  display: inline-block;
+  text-align: center;
+  margin: 0 130px;
+}
+
+.team-list li p {
+  font-size: 1em;
+  font-family: "Roboto";
+  color: rgba(102, 102, 102, 1);
+  line-height: 1.5;
+  width: 100%;
+}
+
+.list-organizers {
+  display: inline-block;
+  padding: 50% 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 1);
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.juarez {
+  background-image: url('../img/juarez.png');
+}
+
+.gustavo-costa {
+  background-image: url('../img/gustavo-costa.png');
+}
+
+.name-organizers {
+  font-size: 1.625em;
+  font-family: "Roboto";
+  color: rgba(3, 155, 229, 1);
+  line-height: 1.385;
+  text-align: center;
+}
+
+/***
+**** FOOTER
+***/
+.footer {
+  background: url('../img/footer.jpg') no-repeat;
+  height: 400px;
+  border-top: 3px solid rgb( 255, 255, 0 );
+}
+
+.footer a {
+  text-indent: -99999em;
+  display: block;
+  text-indent: -999px;
+  background: url('../img/g+icon.png') no-repeat;
+  width: 93px;
+  height: 93px;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+/***
+**** RESPONSIVE DESIGN
+***/
+@media screen and (max-width: 960px) {
+  .centered {
+    width: 900px;
+  }
+
+  .about-gdg {
+    width: 600px;
+  }
+
+  .card-gdg {
+    width: 430px;
+    /*height: 370px;*/
+  }
+
+  .card-gdg md-card-content {
+    width: 350px;
+    margin: 0 auto;
+  }
+
+  .card-list li {
+    padding: 25px 0px 0 0px;
+    font-size: .847em;
+  }
+
+  .card-list li i {
+    padding: 0;
+  }
+
+  .btn {
+    float: right;
+  }
+
+  .team-list li {
+    width: 32.5%;
+    display: inline-block;
+    text-align: center;
+    margin: 0 70px;
+  }
+}
